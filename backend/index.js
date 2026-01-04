@@ -48,6 +48,8 @@ mongoose
     console.log("MongoDB Connected");
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
+      console.log("Loaded Mongo URI =>", process.env.MONGO_URI);
+
     });
   })
   .catch((err) => {
